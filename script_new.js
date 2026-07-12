@@ -59,14 +59,14 @@ function createTaskElement(id, text, completed) {
   div.addEventListener("input", saveTasksToStorage);
 
   const checkImg = document.createElement("img");
-  checkImg.src = "/media/green_checkmark.png";
+  checkImg.src = "./media/green_checkmark.png";
   checkImg.alt = "";
   checkImg.tabIndex = 0;
   checkImg.className = "focus";
   checkImg.addEventListener("click", taskCompleted);
 
   const trashImg = document.createElement("img");
-  trashImg.src = "/media/trash.png";
+  trashImg.src = "./media/trash.png";
   trashImg.tabIndex = 0;
   trashImg.className = "focus";
   trashImg.addEventListener("click", deleteTask);
